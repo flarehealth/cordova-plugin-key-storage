@@ -9,7 +9,7 @@ Modified by Human Practice to disable iCloud sync.
 ### Installation
 
 ```shell
-cordova plugin add https://github.com/humanpractice/cordova-plugin-ios-keychain
+cordova plugin add https://github.com/humanpractice/cordova-plugin-key-storage
 ```
 
 ### iCloud keychain *disabled*

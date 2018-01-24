@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-ios-keychain",
-  "version": "2.0.0",
+  "name": "cordova-plugin-key-storage",
+  "version": "2.0.1",
   "description": "Keychain Plugin for Apache Cordova, created by Shazron Abdullah, maintained by Human Practice",
   "main": "index.js",
   "directories": {
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/humanpractice/cordova-plugin-ios-keychain.git"
+    "url": "git+https://github.com/humanpractice/cordova-plugin-key-storage.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/humanpractice/cordova-plugin-ios-keychain/issues"
+    "url": "https://github.com/humanpractice/cordova-plugin-key-storage/issues"
   },
-  "homepage": "https://github.com/humanpractice/cordova-plugin-ios-keychain#readme"
+  "homepage": "https://github.com/humanpractice/cordova-plugin-key-storage#readme"
 }
