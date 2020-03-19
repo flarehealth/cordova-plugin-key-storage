@@ -11,7 +11,7 @@
       Builds off the great work of ionic-team/cordova-plugin-ios-keychain (formerly shazron/KeychainPlugin)
       and pradeep1991singh/cordova-plugin-secure-key-store.
     </description>
-    <author>humanpractice, building on the work of ionic-team & shazron</author>
+    <author>humanpractice, building on the work of ionic-team and shazron</author>
     <license>Apache 2.0</license>
     <keywords>keychain</keywords>
 
