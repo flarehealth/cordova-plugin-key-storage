@@ -19,17 +19,14 @@
 
 // This is installed as a <js-module /> so it doesn't have a cordova.define wrapper
 
-var exec = require('cordova/exec');
-
-
 var Keychain = {
 	serviceName: "Keychain",
 
 	get: function(success, error, key, touchIDMessage) {
-		exec(success, error, this.serviceName, "get", [key, touchIDMessage]);
+		cordova.exec(success, error, this.serviceName, "get", [key, touchIDMessage]);
 	},
 	set: function(success, error, key, value, useTouchID) {
-		exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
+		cordova.exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
 	},
 
 	setJson: function(success, error, key, obj, useTouchID) {
@@ -44,7 +41,7 @@ var Keychain = {
 			.replace(/[\r]/g, '\\r')
 			.replace(/[\t]/g, '\\t');
 
-		exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
+		cordova.exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
 	},
 
 	getJson: function(success, error, key, touchIDMessage) {
@@ -62,12 +59,14 @@ var Keychain = {
 				error(e);
 			}
 		};
-		exec(cb, error, this.serviceName, "get", [key, touchIDMessage]);
+		cordova.exec(cb, error, this.serviceName, "get", [key, touchIDMessage]);
 	},
 
 	remove: function(successCallback, failureCallback, key) {
-		exec(successCallback, failureCallback, this.serviceName, "remove", [key]);
+		cordova.exec(successCallback, failureCallback, this.serviceName, "remove", [key]);
 	}
 };
 
-module.exports = Keychain;
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = Keychain;
+}
