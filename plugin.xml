@@ -19,8 +19,6 @@
         <engine name="cordova" version=">=2.2.0" />
     </engines>
 
-    <asset src="www/keychain.js" target="plugins/keychain.js" />
-
     <js-module src="www/keychain.js" name="Keychain">
         <clobbers target="Keychain"/>
     </js-module>
